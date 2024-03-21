@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #0f0e17;
+    height: 98dvh;
+}
+
+.wadah {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: grid;
+    place-items: center;
+    isolation: isolate;
+    overflow: hidden;
+}
+
+.konten {
+    --_jarak: 1.5rem;
+    --_teks: #fffffe;
+    width: 58%;
+    max-width: 500px;
+    padding: 2.75rem;
+    border: 2px solid #a7a9be;
+    border-radius: 20px;
+    color: var(--_teks);
+}
+
+.konten p {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: var(--_jarak);
+}
+
+.konten span {
+    font-size: 1.3em;
+    letter-spacing: 1.3px;
+    line-height: 1.2;
+}
+
+.konten button {
+    display: block;
+    margin-top: var(--_jarak);
+    padding: 0.6em 0.9em;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    background: #ff8906;
+    margin-left: auto;
+    color: var(--_teks);
+}
+
+.konten button:hover {
+    background: #f25f4c;
+}
+
+.bongkahan {
+    position: absolute;
+    opacity: 0.5;
+    width: 400px;
+    aspect-ratio: 1/1;
+    animation: mengambang 10s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite alternate forwards;
+    filter: blur(40px);
+    z-index: -1;
+    background: linear-gradient(47deg,
+            rgba(255, 88, 139, 1) 21%,
+            rgb(0 164 173) 67%,
+            rgba(118, 74, 166, 1) 81%);
+    box-shadow: inset 50px 50px 17px 0px #ff588b,
+        inset 100px 100px 17px 0px #66319f;
+}
+
+@keyframes mengambang {
+    0% {
+        translate: 40% -25%;
+        border-radius: 60% 40% 30% 70% / 100% 85% 92% 74%;
+    }
+
+    50% {
+        translate: 0% 13%;
+        border-radius: 20% 71% 47% 70% / 81% 15% 22% 54%;
+        rotate: 41deg;
+        scale: 1.15;
+    }
+
+    100% {
+        translate: -45% 39%;
+        border-radius: 100% 75% 92% 74% / 60% 80% 30% 70%;
+        rotate: -60deg;
+        scale: 1.05;
+    }
+}
