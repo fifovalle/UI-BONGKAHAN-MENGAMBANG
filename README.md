@@ -20,7 +20,7 @@ Jelajahi karya terbaru dan keterampilan saya dalam dunia pengembangan perangkat 
 
 Berikut adalah beberapa tampilan halaman website :
 
-![Screenshot 2024-03-22 133402](https://github.com/fifovalle/UI-BONGKAHAN-MENGAMBANG/assets/90078068/fd493bca-1aa3-493f-86a5-a88c552a7573)
+![Screenshot 2024-03-22 133402](https://github.com/fifovalle/UI-BONGKAHAN-MENGAMBANG/assets/90078068/87b21412-805b-41f8-8327-dc100fc0b0d4)
 
 ## 📬 Kontak
 
